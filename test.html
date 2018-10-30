@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    
+        <title>Bootstrap Tutorial</title>
+
+        <!-- Required tags to make the website responsive-->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Add Bootstrap CSS to the page -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+
+        <!-- My custom styles -->
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.bundle.js') }}">
+
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jquery.js') }}">
+
+       <!-- <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">!-->
+         <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> 
+    
+    </head>
+
+	  <body>
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-md-3">
+                   <p>I want to buy stuff</p>
+               </div>
+
+
+               <div class="col-md-2">
+                   <img src="static/test.jpeg">
+               </div>
+           </div> <!-- /.row -->
+
+
+           <div class="row">
+               <div class="col-sm-8 col-lg-9">
+                   <p>This is the main content</p>
+               </div>
+
+
+               <div class="col-sm-4 col-lg-3">
+                   <p>This is the sidebar</p>
+               </div>
+           </div> <!-- /.row -->
+       </div>
+   </body>
+
+        <!-- Add JQuery and Bootstrap JS to the page -->
+        <!-- JQuery MUST BE BEFORE BOOTSTRAP -->
+        <script src="{{ url_for('static', filename='jquery.js') }}"></script>
+        <script src="{{ url_for('static', filename='bootstrap.bundle.js') }}"></script>
+    </body>
+</html>
